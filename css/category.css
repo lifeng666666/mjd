@@ -1,0 +1,108 @@
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.cat_header{
+    width: 100%;
+    height: 44px;
+    background: url("../images/header-bg.png");
+    -webkit-background-size: 1px 44px;
+    position : fixed;
+    left: 0;
+    top: 0;
+    border-bottom: 1px solid #E0E0E0;
+}
+.cat_header .icon-back{
+    width: 40px;
+    height: 44px;
+    background-position: -20px 0;
+    position : absolute;
+    top: 0;
+    left: 0;
+    padding : 11px 10px;
+
+    background-clip: content-box;
+    background-origin: content-box;
+}
+.cat_header .icon-menu{
+    width: 40px;
+    height: 44px;
+    background-position: -60px 0;
+    position : absolute;
+    top: 0;
+    right: 0;
+    padding : 11px 10px;
+
+    background-clip: content-box;
+    background-origin : content-box;
+}
+.cat_header form{
+    width: 100%;
+    height: 44px;
+    padding-left : 40px;
+    padding-right: 40px;
+}
+.cat_header form input{
+    width: 100%;
+    height: 34px;
+    margin-top: 5px;
+    border : 1px solid #e0e0e0;
+    padding-left: 8px;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    padding-top: 45px;
+}
+.main .cat_left{
+    width: 90px;
+    float: left;
+    overflow : hidden;
+    height: 100%;
+}
+.cat_left .jd_category_left_con li{
+    width: 90px;
+    height: 50px;
+    line-height : 50px;
+    text-align : center;
+    background-color: #e0e0e0;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.cat_left .jd_category_left_con li a{
+    font-size: 15px;
+    width: 100%;
+    display: block;
+}
+.cat_left .jd_category_left_con li.current{
+    background-color: #fff;
+    border-right : none;
+}
+.cat_left .jd_category_left_con li.current a{
+    color : red;
+}
+
+.cat_right {
+    height : 100%;
+    padding : 10px 8px;
+    overflow: hidden;
+    /*background-color: red;*/
+}
+.cat_right .jd_category_right a>img{
+    width: 100%;
+    display : block;
+}
+.cat_right .jd_category_right_con{
+    padding : 10px 0;
+}
+.cat_right .jd_category_right_con p{
+    font-size: 14px;
+    font-weight : bold;
+    margin-bottom: 10px;
+}
+.cat_right .jd_category_right_con ul li{
+    float: right;
+    width: 33.333%;
+    text-align: center;
+    margin-bottom: 10px;
+}

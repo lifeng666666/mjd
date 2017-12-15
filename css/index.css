@@ -1,0 +1,369 @@
+#jd-viewPort{
+    min-width : 300px;
+    max-height : 640px;
+    margin : 0 auto;
+    background-color : #f5f5f5;
+    /*测试高度*/
+    height : 1000px;
+}
+#jd-viewPort .jd-header{
+    width : 100%;
+    height : 40px;
+    position: fixed;
+    left : 0;
+    top : 0;
+    z-index : 999;
+}
+
+#jd-viewPort .jd-header .jd-header-box{
+    min-width: 300px;
+    max-width: 640px;
+    height: 40px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#jd-viewPort .jd-header .jd-header-box .icon-logo{
+    background-position: 0 -103px;
+    width: 60px;
+    height: 30px;
+
+    position : absolute;
+    left : 5px;
+    top : 5px;
+}
+#jd-viewPort .jd-header .jd-header-box .login{
+    width : 40px;
+    height : 40px;
+    position : absolute ;
+    top : 0;
+    right : 0;
+    color : #fff;
+    font-size : 15px;
+    text-align : center;
+    line-height : 40px;
+}
+#jd-viewPort .jd-header .jd-header-box .icon-search{
+    background-position: -60px -109px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    left: 80px;
+}
+#jd-viewPort .jd-header .jd-header-box form{
+    width: 100%;
+    height: 40px;
+    padding-left: 70px;
+    padding-right: 50px;
+}
+#jd-viewPort .jd-header .jd-header-box form input{
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 15px;
+    padding-left: 30px;
+}
+
+/*尾部*/
+#jd-viewPort .jd-footer{
+    width: 100%;
+    height: 54px;
+    line-height : 54px;
+    text-align : center;
+    box-shadow : 0 -2px 2px #ccc;
+    color : #fff;
+    position : fixed;
+    left: 0;
+    bottom : 0;
+    background-color: #fff;
+}
+#jd-viewPort .jd-footer ul{
+
+}
+#jd-viewPort .jd-footer li{
+    float: left;
+    width :20%;
+    height : 54px;
+    text-align : center;
+}
+#jd-viewPort .jd-footer li a{
+    width: 100%;
+    display : block;
+}
+#jd-viewPort .jd-footer li a img{
+    width : 70px;
+}
+
+/*轮播图*/
+#jd-viewPort .jd-banner{
+    width: 100%;
+    overflow : hidden;
+    position : relative;
+}
+#jd-viewPort .jd-banner ul{
+    width: 1000%;
+    transform : translateX(-10%);
+    -webkit-transform : translate(-10%);
+}
+#jd-viewPort .jd-banner ul li{
+    width: 10%;
+    float: left;
+}
+#jd-viewPort .jd-banner ul li a img{
+    display : block;
+    height:auto;
+}
+#jd-viewPort .jd-banner ol{
+    width : 118px;
+    height: 6px;
+    position : absolute;
+    top : 80%;
+    left: 50%;
+    margin-left:-59px;
+}
+#jd-viewPort .jd-banner ol li{
+    width : 6px;
+    height: 6px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    float: left;
+    margin-left:5px;
+}
+#jd-viewPort .jd-banner ol li.current{
+    background-color: #fff;
+}
+
+#jd-viewPort .jd-nav{
+    background-color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#jd-viewPort .jd-nav ul li{
+    width: 20%;
+    text-align: center;
+    margin-bottom:10px;
+    float: left;
+}
+#jd-viewPort .jd-nav ul li a img{
+    width: 40px;
+    height:auto;
+}
+.jd_nav ul li p{
+    color: #666;
+    font-size: 13px;
+}
+
+
+#jd-viewPort .jd-product {
+    margin : 15px 8px 10px;
+}
+#jd-viewPort .jd-product section{
+    width: 100%;
+    height: auto;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+#jd-viewPort .jd-product section .first-sec-title{
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    margin-bottom: 10px;
+    /*height: 130px;*/
+    position: relative;
+}
+#jd-viewPort .jd-product section .first-sec-title h3{
+    margin-left:10px;
+    position: absolute;
+    top : 5px;
+    left: 70px;
+    height: 10px;
+    font-size: 15px;
+}
+#jd-viewPort .jd-product section .first-sec-title .first-sec-time{
+    position: absolute;
+    top : 5px;
+    left: 150px;
+    height: 20px;
+}
+#jd-viewPort .jd-product section .first-sec-title .first-sec-time span{
+    width:20px;
+    color : #fff;
+    background-color: #000;
+    font-size: 25px;
+}
+#jd-viewPort .jd-product section .first-sec-title>img{
+    width: 60px;
+    height: 30px;
+}
+#jd-viewPort .jd-product section .first-sec-title .first-sec-time span:nth-child(3n){
+    background-color: #fff;
+    color : #000;
+}
+#jd-viewPort .jd-product section .first-sec-title  a{
+    float: right;
+    position : relative;
+    top : 6px;
+    width: 45px;
+    color : red;
+}
+#jd-viewPort .jd-product section .first-sec-title  a::after{
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: url("../images/arrow_rt.png") no-repeat;
+    background-size:12px 12px;
+    margin-left: 2px;
+    position: absolute;
+    top:5px;
+    right: 5px;
+}
+#jd-viewPort .jd-product section .jd-content{
+    
+}
+#jd-viewPort .jd-product section .jd-content ul li{
+    float: left;
+    width: 33.33%;
+}
+#jd-viewPort .jd-product section .jd-content ul li{
+    border-right: 1px solid #ccc;
+}
+#jd-viewPort .jd-product section .jd-content ul li:last-child{
+    border-right : none;
+}
+#jd-viewPort .jd-product section .jd-content ul li a p{
+    text-align: center;
+    font-size: 30px;
+}
+#jd-viewPort .jd-product section .jd-content ul li a p:nth-of-type(1){
+    color : red;
+}
+#jd-viewPort .jd-product section .jd-content ul li a p:nth-of-type(2){
+    text-decoration: line-through;
+}
+#jd-viewPort .jd-product section .second-sec-title{
+    margin-left:15px;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+}
+#jd-viewPort .jd-product section .second-sec-title::before{
+    content : '';
+    width : 5px;
+    height : 15px;
+    background-color: red;
+    position : absolute;
+    left: -10px;
+    top: 5px;
+}
+
+
+/*产品统一样式*/
+.pull_left{
+    float: left;
+}
+
+.pull_right{
+    float: right;
+}
+
+.w_50{
+    width: 50%;
+}
+
+/*-----出错点------*/
+.w_50 img{
+    display: block;
+    width: 100%;
+}
+
+.b_right{
+    border-right: 1px solid #e0e0e0;
+}
+
+.b_left{
+    border-left: 1px solid #e0e0e0;
+}
+
+.b_bottom{
+    border-bottom: 1px solid #e0e0e0;
+}
+.b_top{
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.jd_intro{
+    margin-bottom: 90px;
+}
+.jd_intro .jd_intro_title{
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.jd_intro .jd_intro_title::before{
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    background-color: #ccc;
+    top: 50%;
+    left: 0;
+    z-index: -999;
+}
+
+.jd_intro .jd_intro_title span{
+    font-size: 12px;
+    background-color: #f5f5f5;
+    padding:  0 20px;
+}
+
+.jd_intro .jd_intro_con{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.jd_intro .jd_intro_con ul{
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+.jd_intro .jd_intro_con ul li{
+    width: 49%;
+    float: left;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.jd_intro .jd_intro_con ul li:nth-child(2n){
+    float: right;
+}
+
+.jd_intro .jd_intro_con ul li>a{
+    width: 100%;
+    display: block;
+
+}
+.jd_intro .jd_intro_con ul li>a>img{
+    width: 100%;
+    display: block;
+}
+
+.jd_intro .jd_intro_con ul li .jd_intro_con_title{
+    font-size: 14px;
+    font-weight: bold;
+}
+.jd_intro .jd_intro_con ul li .jd_intro_con_bottom{
+    padding-bottom: 10px;
+}
+.jd_intro .jd_intro_con ul li .jd_intro_con_bottom span{
+    color: red;
+}
+
+.jd_intro .jd_intro_con ul li .jd_intro_con_bottom a{
+    float: right;
+    border: 1px solid #e0e0e0;
+    padding: 2px 5px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+;
+}

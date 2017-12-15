@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding : 0;
+
+    /*让盒子设置padding的时候不变*/
+    -webkit-box-sizing : border-box;
+    box-sizing : border-box;
+
+    /* 在不同的设备中,rgba可能不同,所以统一设置成透明 */
+    -webkit-tap-highlight-color : transparent;
+}
+body{
+    font-family : "Microsoft Himalaya",sans-serif;
+    font-size : 14px;
+    color : #000;
+}
+
+a{
+    text-decoration : none;
+    color : #666;
+}
+input,textarea{
+    outline : none;
+    border: none;
+    /* 去除iOS默认的一些非扁平化控件效果(风格不符合不如不要) */
+    -webkit-appearance: none;
+}
+ul,ol{
+    list-style : none;
+}
+li>a{
+    display : inline-block;
+    width : 100%;
+}
+li>a>img{
+    width : 100%;
+}
+/*清除浮动*/
+.clearfix::before,
+.clearfix::after{
+    content : '';
+
+    display : block;
+    clear : both ;
+    visibility : hidden;
+    overflow : hidden;
+    font-size : 0;
+}
+
+/*细边框
+*/
+.light-border,
+.light-border-right,
+.light-border-left,
+.light-border-bottom{
+    position: relative;
+}
+.light-border::after,
+.light-border-right::after,
+.light-border-left::after,
+.light-border-bottom::after{
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 200%;
+    height: 200%;
+    /*border: 1px solid #000;*/
+
+    /* 这里的取值: -1/border-width */
+    -webkit-transform-origin: -1px -1px;
+    transform-origin: -1px -1px;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+}
+.light-border::after{ border: 1px solid #e0e0e0; }
+.light-border-right::after{ border-right: 1px solid #e0e0e0; }
+.light-border-left::after{ border-left: 1px solid #e0e0e0; }
+.light-border-bottom::after{ border-bottom: 1px solid #e0e0e0; }
+
+/* 属性选择器 */
+[class ^= "icon-"]{
+    background-image: url("../images/sprites.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: 200px 200px;
+    background-size: 200px 200px;
+}
+/*let reg = 百度谷歌到的正则表达式;*/
+/*str.test(reg)*/
